@@ -8,7 +8,7 @@ joueur_actuel =""
 fin_jeu = False
 gagnant = ()
 
-# Permet appliquer le jeu dans le terminal(reprend toutes les étapes)
+# Permet appliquer le jeu dans le terminal (structure principale)
 def jouer():
     choix_joueur()
     affichage_grille()
@@ -32,12 +32,13 @@ def choix_joueur():
             break
         else:
             joueur_actuel = input("Veuillez choisir soit une croix (X), soit un rond (O): ")
+        
 
 # Creation et affichage de la grille
 def affichage_grille():
     print("\n")
     print("-------------")
-    print("|",grille[0],"|",grille[1],"|",grille[2],"|")
+    print("|",grille[0],"|",grille[1],"|",grille[2],"|") # Valeurs de la liste
     print("-------------")
     print("|",grille[3],"|",grille[4],"|",grille[5],"|")
     print("-------------")
